@@ -1,7 +1,10 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+Hello and welcome to this blog.  
 
-![Image of fast.ai logo](images/logo.png)
+I am a software developer and technical architect as well as an Aikidoka.  
+You'll find a few ideas here that have interested and excited me throughout my career.  
 
-## This is a title
+## What's in the Code ...
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+Or sometimes what's in the process.  
+Some sparks with references to expand on my ideas.  
+
