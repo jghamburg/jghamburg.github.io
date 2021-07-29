@@ -4,7 +4,7 @@ One lamb will not make a flock and multiple lambda in Java will not make Java a 
 
 In martial arts it's not about opposing forces but complementary engergy - the concept of yin / yang. So what if we take functional concepts to complement ideas from object orientend programming? Lets join forces to find a more concise solution.
 
-Lets start with an example taken from Vankat Subramaniem: Functional Programming in Java.
+Lets start with an example taken from Vankat Subramaniem: Functional Programming in Java .
 
 ## Separation of Concerns - method level  
 
@@ -12,17 +12,17 @@ We are in the finance market and need to manage assets.
 So we start with a rather simple definition.  
 
 ```java
-public​ ​class​ Asset {
-  ​public​ ​enum​ AssetType { BOND, STOCK };
-  ​private​ ​final​ AssetType type;
-  ​private​ ​final​ ​int​ value;
+public class Asset {
+  public enum AssetType { BOND, STOCK };
+  private final AssetType type;
+  private final int value;
 
-  ​public​ Asset(​final​ AssetType assetType, ​final​ ​int​ assetValue) {​ 
+  public Asset(final AssetType assetType, final int assetValue) {
     type = assetType;
     value = assetValue;
   }
-  ​public​ AssetType getType() { ​return​ type; }	
-  ​public​ ​int​ getValue() { ​return​ value; }
+  public AssetType getType() { return type; }	
+  public int getValue() { return value; }
 }
 ```
 
@@ -32,8 +32,8 @@ The first requirement will be to sum up the total value of our assets.
 We implement this in a AssetUtils.class like this.
 
 ```java
-public​ ​static​ ​int​ totalAssetValues(​final​ ​List​<Asset> assets) {​ 
-  ​return​ assets.stream()
+public static int totalAssetValues(final List<Asset> assets) {
+  return assets.stream()
     .mapToInt(Asset::getValue)
     .sum();
 }
@@ -58,8 +58,8 @@ What's next? The boss will ask us to sum up only the bonds.
 - No problem. We copy the totalAssetValues and adapt.
 
 ```java
-public​ ​static​ ​int​ totalValues(​final​ ​List​<Asset> assets) {​ 
-  ​return​ assets.stream()
+public static int totalValues(final List<Asset> assets) {
+  return assets.stream()
     .mapToInt(asset ->
               asset.getType() == AssetType.BOND ? asset.getValue() : 0
     )
@@ -72,8 +72,8 @@ So next requirement: we need the value of our stocks as well.
 We already know how to do this.
 
 ```java
-public​ ​static​ ​int​ totalValues(​final​ ​List​<Asset> assets) {​ 
-  ​return​ assets.stream()
+public static int totalValues(final List<Asset> assets) {
+  return assets.stream()
     .mapToInt(asset ->
               asset.getType() == AssetType.STOCK ? asset.getValue() : 0
     )
@@ -153,8 +153,13 @@ There are more ideas to embrace! You will see.
 
 # Resources
 
-* [FPJ]: Functional Programmming in Java by Venkat Subramaniam, PragProg Pub 2014
-* [Refac]: Refactoring (second edition) by Martin Fowler, Addison Wesley New York 2019
-* [RefacToPat]: Refactoring to Pattern by Joshua Kerievsky, Addison Wesley New York 2005
-* [RefacWork]: Refactoring Workbook by William C. Wake, Addison Wesley New York 2004
-* [DuckDuck]: search for "youtube venkat subramaniam functional interfaces"
+* [Functional Programmming in Java by Venkat Subramaniam, PragProg Pub 2014][FPJ]  
+* [Refactoring (second edition) by Martin Fowler, Addison Wesley New York 2019][Refac]
+* [Refactoring to Pattern by Joshua Kerievsky, Addison Wesley New York 2005][RefacToPat]
+* [Refactoring Workbook by William C. Wake, Addison Wesley New York 2004][RefacWork]
+* search for "youtube venkat subramaniam functional interfaces" on duckduckgo.com
+
+[FPJ]: https://pragprog.com/titles/vsjava8/functional-programming-in-java/
+[Refac]: https://www.informit.com/store/refactoring-improving-the-design-of-existing-code-9780134757599
+[RefacToPat]: https://www.informit.com/store/refactoring-to-patterns-9780132651196
+[RefacWork]: https://www.informit.com/store/refactoring-workbook-9780321109293
