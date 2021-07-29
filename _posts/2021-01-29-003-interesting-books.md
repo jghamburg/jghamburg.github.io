@@ -1,4 +1,4 @@
-# 2021-01-29 - Books I enjoyed to Read  
+# Books I enjoyed to Read  
 
 First writeup on 2020-05-19.  
 

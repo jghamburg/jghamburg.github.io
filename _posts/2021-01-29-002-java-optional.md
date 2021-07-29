@@ -1,4 +1,4 @@
-# 2021-01-29 Is Optional an Option ?   
+# Is Optional an Option ?   
 
 Optional was introduced in Java 8 to simplify and reduce the use of Null. And to better prevent NullpointerExceptions. - Remember Java 8 was introduced in 2014 so this is actually no new topic or invention. But I found a lot of developers in my working context were not using this feature.  
 So this should be a short intro and my take on the subject.  

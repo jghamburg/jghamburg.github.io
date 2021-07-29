@@ -1,4 +1,4 @@
-# 2021-02-13 - Using Lambda Expressions in Java  
+# Using Lambda Expressions in Java  
 
 One lamb will not make a flock and multiple lambda in Java will not make Java a functional programming language.  
 
