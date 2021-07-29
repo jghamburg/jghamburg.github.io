@@ -1,4 +1,4 @@
-# My way to Amarillo - or a better local development with k8s (part 1)  
+# My way to Amarillo - or a better local development with k8s  
 
 ## Revised version  
 
