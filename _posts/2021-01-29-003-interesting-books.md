@@ -1,4 +1,4 @@
-# Books I enjoyed to Read  
+# Books I enjoyed Reading  
 
 First writeup on 2020-05-19.  
 
@@ -6,12 +6,15 @@ This is a short intro to books I really enjoyed and which made an impression on 
 
 In my experience it is very important to learn new techniques and ideas by understanding the motivation and the needs of the authors at the time of creation.  
     There is no such thing like a silver bullet. - Old but true.
-
-    „It is also important to me that you should always be driven by the following guiding principle when working with Domain-driven Design and when designing your software:
-    The domain should be the heart of a system.
-    Unfortunately, I experience it again and again that some so-called Domain-driven Design disciples propagate that real Domain-driven Design can only be pursued if you solve any requirement with the patterns of the Internal Building Blocks (Entity, Aggregate, ..). I consider this attitude to be fundamentally wrong and even harmful. In my opinion, it is crucial that you understand a requirement and its underlying business problem and then develop a solution that best reflects the domain model and the corresponding business domain. If the Internal Building Blocks patterns help you with that, then that’s excellent. I think the patterns are good but do they solve any problem? Certainly not. In my opinion you captured the essence of Domain-driven Design if you realize in such a situation that the patterns of Internal Building Blocks do not fit and instead choose another way.
-    Although it is, of course, desirable when you manage to incorporate as many aspects of Domain-driven Design as[…]"
-        Citation from: Michael Plöd. „Hands-on Domain-driven Design - by example."
+>
+> It is also important to me that you should always be driven by the following guiding principle when working with Domain-driven Design and when designing your software:
+> The domain should be the heart of a system.
+> Unfortunately, I experience it again and again that some so-called Domain-driven Design disciples propagate that real Domain-driven Design can only be pursued if you solve any requirement with the patterns of the Internal Building Blocks (Entity, Aggregate, ..). 
+> I consider this attitude to be fundamentally wrong and even harmful. In my opinion, it is crucial that you understand a requirement and its underlying business problem and then develop a solution that best reflects the domain model and the corresponding business domain. 
+> If the Internal Building Blocks patterns help you with that, then that’s excellent. I think the patterns are good but do they solve any problem? Certainly not. 
+> In my opinion you captured the essence of Domain-driven Design if you realize in such a situation that the patterns of Internal Building Blocks do not fit and instead choose another way.
+> Although it is, of course, desirable when you manage to incorporate as many aspects of Domain-driven Design as[…]
+>> Citation from: Michael Plöd. „Hands-on Domain-driven Design - by example."
 
 
 * [DDD Referenz (german)](https://leanpub.com/ddd-referenz) - translated by Eberhard Wolff (free version)
