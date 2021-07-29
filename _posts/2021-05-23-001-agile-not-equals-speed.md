@@ -3,7 +3,7 @@
 I recently watched Kevlin Henney's 2018 conference talks where I had the opportunity to meet him.  
 He gave me a much broader view on software development than just delivering code.  
 
-The following ideas are taken from his talk [Agility ≠ Speed - Kevlin Henney - YouTube] (https://www.youtube.com/watch?v=kmFcNyZrUNM)  
+The following ideas are taken from his talk [Agility ≠ Speed - Kevlin Henney - YouTube][agileNotSpeed].  
 
 Let's start with a simple question and see where this might take us.  
 
@@ -69,5 +69,11 @@ No, I don't think it is.  It's about finding the right balance.
 
 We need to start doing, even if it seems small, and talk about it. This will open up ways to understand impact and opportunities for improvement and grow.  
 
- So let's build, communicate and improve!  
+So let's build, communicate and improve!  
 Be inspired by this wonderful 2018 talk by Kevlin Henney.
+
+## Resources  
+
+* [Agility ≠ Speed - Kevlin Henney - YouTube][agileNotSpeed]
+
+[agileNotSpeed]: (https://www.youtube.com/watch?v=kmFcNyZrUNM)
