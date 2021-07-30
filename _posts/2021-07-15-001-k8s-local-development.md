@@ -260,10 +260,11 @@ I will provide more details on k3d setup and usage in a later post.
 * [docker-tuntap-osx][docker-tuntap-osx]
 * [Access Minikube services from Host on OSX][Access Minikube services from Host on OSX]  
 * [TunTap for OSX][TunTap for OSX]
+* [K3D Loadbalancing - Metallb on Mac][k3d-loadbalancing]
 
 [Setup dnsmasq on OSX]: https://gist.github.com/brablc/f48fef6336765212360ed3de66034b90   
 [docker-tuntap-osx]: https://github.com/AlmirKadric-Published/docker-tuntap-osx  
 [Access Minikube services from Host on OSX]: https://stevesloka.com/access-minikube-services-from-host/  
 [TunTap for OSX]: http://tuntaposx.sourceforge.net/  
-[K3D Loadbalancing - Metallb on Mac](https://habd.as/post/kubernetes-macos-load-balancing-k3s-k3d-metallb/)
+[k3d-loadbalancing]: https://habd.as/post/kubernetes-macos-load-balancing-k3s-k3d-metallb/
 
