@@ -372,8 +372,8 @@ The sample project with the code and my article you can find on
 __Articles about PBT and usage__:
 
 * [The original paper by Claessen-Hughes 2000](https://www.semanticscholar.org/paper/QuickCheck%3A-a-lightweight-tool-for-random-testing-Claessen-Hughes/75d28729e96691eb85ae2b34e791473a24062ce5)
-* [How to Specify it! In Java! | How to Specify It! In Java!](https://johanneslink.net/how-to-specify-it/)
 * [Property-based Testing in Java: Introduction - My Not So Private Tech Life](https://blog.johanneslink.net/2018/03/24/property-based-testing-in-java-introduction)
+* [How to Specify it! In Java! by Johannes Link](https://johanneslink.net/how-to-specify-it/)
 * [Know for Sure with Property-Based Testing](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing)
 * [Intro to PBT with F#](https://fsharpforfunandprofit.com/posts/property-based-testing/)
 * [Step by Step to Property based Testing - Dave Nicolette 2018](https://www.leadingagile.com/2018/04/step-by-step-toward-property-based-testing/)
@@ -408,9 +408,9 @@ These articles actually triggered my ideas for this project.
   Recommendation: Use OffsetDateTime for database use.
 * [Why “Always use UTC” is bad advice](https://engineering.q42.nl/why-always-use-utc-is-bad-advice/)
   Basically use ZonedDateTime if you want to calculate events in the future.
-* [Jackson , java.time , ISO 8601 , serialize without milliseconds | Newbedev](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
+* [Jackson , java.time , ISO 8601 , serialize without milliseconds - Newbedev Blog](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
 * [Jackson JSON - Using @JsonSerialize and @JsonDeserialize with Converter for custom conversion](https://www.logicbig.com/tutorials/misc/jackson/json-serialize-deserialize-converter.html)
-* [JSON deserialize generic types using Gson and Jackson | JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
+* [JSON deserialize generic types using Gson and Jackson - JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
 
 
 [github jghamburg/pbt-demo]: https://github.com/jghamburg/pbt-demo
