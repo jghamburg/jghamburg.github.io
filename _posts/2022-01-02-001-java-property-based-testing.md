@@ -336,8 +336,8 @@ the functioning of the system.
 realm of problem-solving. You can extend your repertoire/portfolio of tools to use for solving
 different kind of problems/challenges.
 
-	If the only tool you have at hand is a hammer every problem is a nail. 
-		Unknown - at least to me
+> If the only tool you have at hand is a hammer every problem is a nail. 
+>> Unknown - at least to me
 
 Things that came up during the experiments:
 
