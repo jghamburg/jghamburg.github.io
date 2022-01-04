@@ -375,8 +375,9 @@ __Articles about PBT and usage__:
 * [Property-based Testing in Java: Introduction - My Not So Private Tech Life](https://blog.johanneslink.net/2018/03/24/property-based-testing-in-java-introduction)
 * [Know for Sure with Property-Based Testing](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing)
 * [Intro to PBT with F#](https://fsharpforfunandprofit.com/posts/property-based-testing/)
-* [Step by Step to Property based Testing - Dave Nicolette 2018](https://www.leadingagile.com/2018/04/step-by-step-toward-property-based-testing/)
-    - a good introduction
+* [Step by Step to Property based Testing - Dave Nicolette 2018](https://www.leadingagile.com/2018/04/step-by-step-toward-property-based-testing/) - a good introduction
+
+__When to use it__:  
 
 * [How to Specify it! In Java! by Johannes Link - rewrite from a John Huges paper and presentation](https://johanneslink.net/how-to-specify-it/)
 * [Patterns to Identify Properties by Johannes Link 2018](https://blog.johanneslink.net/2018/07/16/patterns-to-find-properties)
@@ -397,7 +398,7 @@ __Interesting short series about testing__:
 * [Multiplying the Quality of your Tests - with Parameterized Tests - Sergio Sastre Florez - 2021](https://sergiosastre.hashnode.dev/multiplying-the-quality-of-your-unit-tests-part-1)
   Pros and Cons (kotlin code examples)
 
-[Testing General Rules through Property-Based Tests - A. Rothuis - 2020](https://arothuis.nl/posts/property-based-testing-rock-paper-scissors/)
+* [Testing General Rules through Property-Based Tests - A. Rothuis - 2020](https://arothuis.nl/posts/property-based-testing-rock-paper-scissors/)
 -> nice appetizer - more academic approach
 
 __Examples based on json date conversion__:  
@@ -409,9 +410,9 @@ These articles actually triggered my ideas for this project.
   Recommendation: Use OffsetDateTime for database use.
 * [Why “Always use UTC” is bad advice](https://engineering.q42.nl/why-always-use-utc-is-bad-advice/)
   Basically use ZonedDateTime if you want to calculate events in the future.
-* [Jackson , java.time , ISO 8601 , serialize without milliseconds | Newbedev](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
+* [Jackson , java.time , ISO 8601 , serialize without milliseconds by Newbedev blog](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
 * [Jackson JSON - Using @JsonSerialize and @JsonDeserialize with Converter for custom conversion](https://www.logicbig.com/tutorials/misc/jackson/json-serialize-deserialize-converter.html)
-* [JSON deserialize generic types using Gson and Jackson | JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
+* [JSON deserialize generic types using Gson and Jackson by JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
 
 
 [github jghamburg/pbt-demo]: https://github.com/jghamburg/pbt-demo
