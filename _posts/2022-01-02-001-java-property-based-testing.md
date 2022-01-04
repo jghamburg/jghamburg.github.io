@@ -302,8 +302,7 @@ check for:
 
 * No exceptions occur, at least no unexpected ones - wrong data is identified on entering the
   service udner test.
-* Verify http return values of your REST services by calling them with randomly generated input data.
-  So verify that no 5xx return codes in http requests are returned
+* No 5xx return codes in http requests, maybe you even require 2xx all the time
 * All return values are valid
 
 ### Test Oracle
@@ -322,12 +321,6 @@ There are a few sources where the alternatives can come from:
 * Self-made versus commercial
 * Old (pre-refactoring) versus new (post-refactoring)
 
-### Resources  
-
-* [How to Specify it! In Java! by Johannes Link](https://johanneslink.net/how-to-specify-it/)
-* [Patterns to Identify Properties by Johannes Link 2018](https://blog.johanneslink.net/2018/07/16/patterns-to-find-properties)
-* [Property-based Testing Patterns by Sanj 2016](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html)
-
 ## Lessons Learned
 
 ### But why yet another testing framework?
@@ -343,8 +336,8 @@ the functioning of the system.
 realm of problem-solving. You can extend your repertoire/portfolio of tools to use for solving
 different kind of problems/challenges.
 
-> If the only tool you have at hand is a hammer every problem is a nail. 
->> Unknown - at least to me
+	If the only tool you have at hand is a hammer every problem is a nail. 
+		Unknown - at least to me
 
 Things that came up during the experiments:
 
@@ -363,7 +356,7 @@ Myself I was quite astonished how many ideas and insights I generated only by pr
 and to be clear I would not have started out to analyse and structure some input data into categories
 and provide examples for these.  
 
-## At the end
+At the end
 
 * a lot of fun
 * a cool way to generate test data
@@ -384,6 +377,10 @@ __Articles about PBT and usage__:
 * [Intro to PBT with F#](https://fsharpforfunandprofit.com/posts/property-based-testing/)
 * [Step by Step to Property based Testing - Dave Nicolette 2018](https://www.leadingagile.com/2018/04/step-by-step-toward-property-based-testing/)
     - a good introduction
+
+* [How to Specify it! In Java! by Johannes Link - rewrite from a John Huges paper and presentation](https://johanneslink.net/how-to-specify-it/)
+* [Patterns to Identify Properties by Johannes Link 2018](https://blog.johanneslink.net/2018/07/16/patterns-to-find-properties)
+* [Property-based Testing Patterns by Sanj 2016](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html)
 
 __The Framework jqwik and Exensions__:  
 
@@ -412,9 +409,9 @@ These articles actually triggered my ideas for this project.
   Recommendation: Use OffsetDateTime for database use.
 * [Why “Always use UTC” is bad advice](https://engineering.q42.nl/why-always-use-utc-is-bad-advice/)
   Basically use ZonedDateTime if you want to calculate events in the future.
-* [Jackson , java.time , ISO 8601 , serialize without milliseconds - Newbedev Blog](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
+* [Jackson , java.time , ISO 8601 , serialize without milliseconds | Newbedev](https://newbedev.com/jackson-java-time-iso-8601-serialize-without-milliseconds)
 * [Jackson JSON - Using @JsonSerialize and @JsonDeserialize with Converter for custom conversion](https://www.logicbig.com/tutorials/misc/jackson/json-serialize-deserialize-converter.html)
-* [JSON deserialize generic types using Gson and Jackson - JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
+* [JSON deserialize generic types using Gson and Jackson | JSBlogs](https://blogs.jsbisht.com/blogs/2016/09/07/json-deserialize-generic-types-using-gson-and-jackson)
 
 
 [github jghamburg/pbt-demo]: https://github.com/jghamburg/pbt-demo
