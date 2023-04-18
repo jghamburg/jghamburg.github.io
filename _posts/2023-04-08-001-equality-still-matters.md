@@ -1,49 +1,63 @@
-# Equality still Matters - Improve Understanding and Maintainability  
+# Equality still Matters - Improve Understanding and Maintainability
 
-In my experience equality still matters not only in human world but also within the realm of software developemnt.  
+In my experience equality still matters not only in human world but also within the realm of software developemnt. And it is the basic concepts that take us far before we have to switch to more complex methods to find a solution.   
 
 As I was doing some code reviews lately (2023) I saw a lot of unit test code like this:  
 
-* Take a salesOrder with like 15+ attributes  
-* run some function/method that provides a salesOrder instance  
+* Request an object like a product with 5+ attributes from a business service 
 * compare expected against actual output.  
 
-So far so good - just a standard scenario. Now let's look at the code.  
-
 ```java
-SalesOrder actualOrder = businessService.processIncomingEvent();
-assertThat(actualOrder.getStatus()).isEqualTo("ORDER_CREATED);
-assertThat(actualOrder.get...
-...
-3-5 more entries (search in code base)
+// Given
+ProductId productId =
+   new ProductId("af508252-65e7-4e68-ba26-fed86d5e6b96");
+// When
+  Product product = productDataService.getProduct(partnerVariationId);
+
+// Then
+  assertThat(product.getProductId())
+   .isEqualTo("af508252-65e7-4e68-ba26-fed86d5e6b96");
+  assertThat(product.getArticleNumber()).isEqualTo(16441402);
+  assertThat(product.getWarehouseId()).isEqualTo(1);
+  assertThat(product.getWarehouseLocation()).isEqualTo("MYWAREHOUSE_LOCATION");
+  assertThat(product.getPackages().get(0).getPackageNumber()).isEqualTo(1);
 ``` 
 
-Does this really conway the idea and the validation I want to process in a concise way? Is it easy to understand?  
+So far so good - just a standard scenario. Now let's look at the code.  
+So what is wrong with this code? - Actually nothing - it is working.    
 
-The question that came spontainioius to my mind during that review:  
+More prcisely asked: Does this conway the idea and the validation I want to process in a concise way? Is it easy to understand?  
 
-    Do we have a common understanding of equality concerning SalesOrder?
-    Are there different notions of equality that imposes the finegrained writeup?
-    What are different notions of equality that cpome to my mind right away?
+The questions that came to my mind:  
 
+* Do we have a common understanding of equality concerning the product?
+* Are there different notions of equality that imposes the finegrained writeup?
+* What are different notions of equality that I know of?
+
+So let's dig deeper here.  
 Based on DDD (Domain Driven Design) there are two basic notions of identity and associated equality.  
 
 * Two DDD entities are equal if and only if the defined identifier for that domain object are equal.  
 * Two DDD value objects are equal if and only if all (nonvolatile) attributes of the instances are equal.  
 
-According to my understanding the major difference between both typres of object is that DDD entities have a unique id that is valid for the whole lifecycle of it. And besides it con contain a lot of different attributes that change over time of the lifespan.  
-The before mentioned SalesOrder is one of this kind. Duriong it's life it wanders through different states e.g. like ORDER_CREATED, ORDER_PAID, ORDER_FULFILLED and associated changing attributes.  
+The major difference between both types of object is that DDD entities have a unique id that is valid for the whole lifecycle of it. And besides it can contain a lot of different attributes that change over time of the lifespan.  
+On the one hand Product is a DDD entity. On the other hand I want to verify the exact attribute match during 
+
+
+
+
+
 A DDD value object does not have the notion of a lifespan. It is created once adn most likely will be associated to an entity object, e.g. as attribute. This could be a Price that contains an ammount and currency attribute.  
 
-Beside the business driven ideas from DDD there is also the notion of equality that is provided by the programming language used.  
+Beside the business driven ideas from DDD there is also the notion of equality that is provided by the programming language used. This provides a posibility to implement my idea of business equality.   
 For my further observations the language of choise is Java.  
-If you do not change standard implementation of equality it means that to objects are equals if the pointzer to the in memory instance is equal. So:  
+If you do not change standard implementation of equality it means that two objects are equals if the pointer to the in memory instance is equal. So:  
 
-    objA == objB &wedgeq; objA.equals(objB)
+objA == objB &wedgeq; objA.equals(objB)
 
-Be very presice on this. Only very rarely this kind of equality is the one you seek for. It holds true for Java String implementation because every representation of a String is handled as static object (same content -> same object).  
+Only rarely this kind of equality is the one you seek. It holds true for Java String implementation because every representation of a String is handled as static object (same content -> same object).  
 
-In contrast it does not work for our DDD entity example of SalesOrder. Even if every attribute is set exactly the same values two different instances will never be equal.  
+In contrast it does not work for our DDD entity example of Product. Even if every attribute is set exactly the same values two different instances will never be equal.  
 
 With that introduction out of the way let's sketch out some ideas how to apply our knowledge.  
 
